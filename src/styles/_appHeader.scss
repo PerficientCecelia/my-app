@@ -1,4 +1,48 @@
 .fixed-header-container{
-  position: fixed;
+    width:100%;
+    position: fixed;
+    background-color: #E8CCFF;
     
+
+    header{
+      padding:10px 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .proverb{
+        display: inline-block;
+        font-size: 2em;
+        width: 50%;
+      }
+
+      .info-meta{
+        text-align: right;
+        display: inline-block;
+        width:50%;
+
+        img{
+          display: inline-block;
+          width:40px;
+          height: 40px;
+          vertical-align: middle;
+        }
+  
+        .my-info{
+          display: inline-block;
+          vertical-align: middle;
+          margin:0 15px;
+  
+          .name{
+            display: block; 
+          }
+  
+          .level{
+            text-align: center;
+            display: block; 
+          }
+        }
+      }
+      
+    }
 }

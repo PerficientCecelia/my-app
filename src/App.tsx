@@ -11,9 +11,13 @@ const store = createStore(rootReducer);
 const App = () => {
   return (
     <Provider store={store}>
+       <div className='container'>
           <APPHeader />
           <AppNavigator />
-          <Switcher />
+          <div className='content-container'>
+            <Switcher />
+          </div>
+        </div>
     </Provider>
   );
 }
